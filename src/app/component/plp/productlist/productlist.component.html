@@ -5,7 +5,7 @@
     <span class="product-heading-gridIcon"><i (click)="showGridView()" [ngClass]="{'active': !showlist}" class="fa fa-th"></i></span>
   </p>
   <div *ngIf="products[0]" [ngClass]="{'list': showlist }" class="product-grid row">
-    <div *ngFor="let product of products | paginate: { itemsPerPage: 2, currentPage: p }" class="card product-grid-card col-md-4">
+    <div *ngFor="let product of products | paginate: { itemsPerPage: 7, currentPage: p }" class="card product-grid-card col-md-4">
       <img class="card-img-top product-grid-card-image " [src]="product.imageUrl" alt="Card image cap">
       <div class="card-body">
         <h5 class="card-title">{{product.name}}</h5>

@@ -22,16 +22,16 @@ export class RatingComponent implements OnInit {
     if(this.rating == 5){
       this.rating5 = true;
     }
-    if(this.rating < 5 || this.rating >=4){
+    else if(this.rating < 5 || this.rating >=4){
       this.rating4 = true;
     }
-    if(this.rating < 4 || this.rating >=3){
+    else if(this.rating < 4 || this.rating >=3){
       this.rating3 = true;
     }
-    if(this.rating < 3 || this.rating >=2){
+    else if(this.rating < 3 || this.rating >=2){
       this.rating2 = true;
     }
-    if(this.rating < 2 || this.rating >=1){
+    else if(this.rating < 2 || this.rating >=1){
       this.rating1 = true;
     }
   }
